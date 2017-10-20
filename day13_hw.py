@@ -23,22 +23,18 @@ def b1():               #함수 b1을 정의합니다.
         dx2 = X - bx #왼쪽 방향으로 부딪힘
         dy1 = Y - by #위쪽 방향으로 부딪힘
         dy2 = Y - (by+bb) #아래쪽 방향으로 부딪힘
-        print("A")
 
-    elif (cx-gap < X < cx+ca+gap) and (cy-gap < Y< cy+ cb+gap): # 현재 거북이 위치가 오차를 포함하여 장애물 블록2에 위치하였다면 아래 조건을 미지수로 지정합니다.
+    elif (cx-gap < X < cx+ca+gap) and (cy-gap < Y< cy+ cb+gap): # 현재 거북이 위치가	 오차를 포함하여 장애물 블록2에 위치하였다면 아래 조건을 미지수로 지정합니다.
         dx1 = X - (cx+ca)#오른쪽 방향으로 부딪힘
         dx2 = X - cx #왼쪽 방향으로 부딪힘
         dy1 = Y - cy #위쪽 방향으로 부딪힘
         dy2 = Y - (cy+cb) #아래쪽 방향으로 부딪힘
-        print (cx, ca, cb, cy,X,Y)
-        print("B")
 
     else:                                                       # 현재 거북이 위치가 오차를 포함하여 벽에 위치하였다면 아래 조건을 미지수로 지정합니다.
         dx1 = X - a #오른쪽 방향으로 부딪힘
         dx2 = X + a #왼쪽 방향으로 부딪힘
         dy1 = Y - a #위쪽 방향으로 부딪힘
         dy2 = Y + a #아래쪽 방향으로 부딪힘
-        print("C")
 
     if (-gap < dy1< gap or -gap < dy2< gap) and (-gap < dx1< gap or -gap < dx2 < gap):  # 위에 제시된 조건이 모두 오차내에 있다면 뒤로 돌아 움직인 후 함수 처음으로 돌아갑니다.
         t.lt(180)

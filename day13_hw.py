@@ -139,7 +139,7 @@ for x in range(2):                              #장애물을 그립니다.
     t.left(90)
 t.end_fill()
 
-# 장애물 블록1 / 벽처럼 부딫칩니다.
+# 장애물 블록1 / 벽처럼 부딫니다.
 bx = random.randint(-a, a)                      #장애물 블록1을 만들기 위한 미지수를 지정합니다.
 by = random.randint(-a, a)
 ba = random.randint(150, 200)
@@ -161,7 +161,7 @@ for x in range(2):                              #장애물을 그립니다.
     t.left(90)
 t.end_fill()
 
-# 장애물 블록2 / 벽처럼 부딫칩니다.
+# 장애물 블록2 / 벽처럼 부딫힙니다.
 cx = random.randint(-a, a)                  #장애물 블록1을 만들기 위한 미지수를 지정합니다.
 cy = random.randint(-a, a)
 ca = random.randint(150, 200)

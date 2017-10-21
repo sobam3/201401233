@@ -189,7 +189,7 @@ t.goto(0,0)
 t.color("olive")
 t.seth(random.randint(0,360))   #거북이의 각도를 무작위로 배정합니다.
 t.down()
-t.shape("turtle")               #거북이 모양을 
+t.shape("turtle")               #거북이 모양을   .
 t.pensize(1)
 
 t.speed(3)  #속도를 3으로 합니다.
